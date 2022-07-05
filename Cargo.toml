@@ -1,0 +1,19 @@
+[package]
+name = "atomic-file"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nix = "0.24"
+serde_json = "1"
+serde = { version = "1", features = ["derive"] }
+
+[[bin]]
+name = "bytes"
+path = "src/bytes.rs"
+
+[[bin]]
+name = "json"
+path = "src/json.rs"
